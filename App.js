@@ -15,6 +15,13 @@ export default function App() {
           imagem='video-thum.png'
           titulo='Documentário Super Size Me'></Card>
       </View>
+      <View>
+        <Text>Termos</Text>
+        <Text>
+          Tudo que você precisa saber sobre dieta, gordura corporal e muito mais!
+        </Text>
+      </View>
+      <TermoCard>
     </View>
 
   );
@@ -50,7 +57,7 @@ const styles = StyleSheet.create({
     alignContent: 'center',
     alignItems: 'center',
     flexDirection: 'column',
-    padding: '15px'
+    paddingTop: '2vh'
   }
 
 });
