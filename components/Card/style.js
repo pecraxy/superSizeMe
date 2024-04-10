@@ -1,12 +1,12 @@
 import {StyleSheet} from 'react-native'
 const style = StyleSheet.create({
     card:{
-        maxWidth: '100vw', 
+        width: '90vw', 
         minHeight: '20vh',
         backgroundColor: 'white',
         padding: '10px',
         borderRadius: '10px',
-        boxShadow: '0px 1px 2px 0.07px gray',
+        boxShadow: '0px 2px 4px 0px gray',
         display: 'flex',
         flexDirection: 'column'
     },
@@ -19,8 +19,13 @@ const style = StyleSheet.create({
     titulo:{
         width: '100%',
         textAlign: 'center',
-        fontSize: '1.5em',
-        margin: '8px'
+        fontSize: '1.6em',
+        fontWeight: 'bold',
+        margin: '10px'
+    },
+    descricao:{
+        margin: '5px',
+        fontSize: '1.2em'
     },
     imagemPequena:{
         width: '50px',
