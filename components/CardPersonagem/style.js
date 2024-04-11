@@ -6,8 +6,7 @@ const style = StyleSheet.create({
         minHeight: '15vh',
         backgroundColor: 'white',
         display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center',
+        flexDirection: 'column',
         justifyContent: 'space-between',
         padding: '10px',
         borderRadius: '10px',
@@ -18,19 +17,16 @@ const style = StyleSheet.create({
         width: '27vw',
         height: '27vw',
         backgroundColor: '#00c16c',
-        borderRadius: '15px',
+        borderRadius: '100%',
 
     },
     textRow:{
         display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        height: '100%',
-        maxWidth: '40vw'
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        flexWrap: 'nowrap'
     },
     button:{
-        width: '10vw',
-        height: '100%',
         color: 'black',
         textAlign: 'center',
         alignItems: 'center',
@@ -39,13 +35,14 @@ const style = StyleSheet.create({
         
     },
     buttonText: {
-        fontSize: '4em',
+        fontSize: '2em',
         margin: '0',
         padding: '0'
     },
     title: {
-        fontSize:'1.2em',
+        fontSize:'1.4em',
         fontWeight: 'bold',
+        margin: '5px'
     },
     text: {
         fontSize: '1em',

@@ -8,7 +8,9 @@ const style = StyleSheet.create({
         borderRadius: '10px',
         boxShadow: '0px 2px 4px 0px gray',
         display: 'flex',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        margin: '1.5rem',
+
     },
     row: {
         display: 'flex',
@@ -35,7 +37,12 @@ const style = StyleSheet.create({
         width: '100%',
         height: '25vh',
         borderRadius: '15px'
-    }
+    },
+    buttonText: {
+        fontSize: '4em',
+        margin: '0',
+        padding: '0'
+    },
 });
 
 export default style;

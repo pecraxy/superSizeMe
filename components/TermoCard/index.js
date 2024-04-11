@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, Image, Button, Pressable } from 'react-native';
 import style from './style';
 
 
-export default function TermoCard({imagem, titulo, texto}){
+export default function TermoCard({imagem, titulo, texto, navigation, pagina}){
     return(
         <>
             <View style={style.card}>
@@ -13,7 +13,7 @@ export default function TermoCard({imagem, titulo, texto}){
                 </View>
                 <Pressable style={({pressed}) => [
                     {backgroundColor: pressed ? 'rgb(210, 230, 255)' : 'white'}
-                ]} onPressIn={console.log('oi')}><Text style={style.buttonText}>{'>'}</Text></Pressable>
+                ]} onPressIn={() => navigation.navigate(pagina)}><Text style={style.buttonText}>{'>'}</Text></Pressable>
             </View>
         </>
     );
