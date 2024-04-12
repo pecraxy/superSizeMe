@@ -31,18 +31,24 @@ const style = StyleSheet.create({
     },
     imagemPequena:{
         width: '50px',
-        height: '50px'
+        height: '50px',
+        backgroundColor: '#cbe3ff',
+        borderRadius: '100%',
     },
     imagem: {
         width: '100%',
         height: '25vh',
         borderRadius: '15px'
+        
     },
     buttonText: {
         fontSize: '4em',
         margin: '0',
         padding: '0'
     },
+    button:{
+      marginTop: '10px',
+    }
 });
 
 export default style;

@@ -24,18 +24,11 @@ const style = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
+        alignItems: 'center',
         flexWrap: 'nowrap'
     },
-    button:{
-        color: 'black',
-        textAlign: 'center',
-        alignItems: 'center',
-        display: 'flex',
-        justifyContent:'center',
-        
-    },
     buttonText: {
-        fontSize: '2em',
+        fontSize: '4em',
         margin: '0',
         padding: '0'
     },
@@ -46,7 +39,7 @@ const style = StyleSheet.create({
     },
     text: {
         fontSize: '1em',
-    }
+    },
 });
 
 export default style;

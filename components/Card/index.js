@@ -1,25 +1,7 @@
 import { View, Text, Image, Button } from 'react-native'
 import style from './style';
 import { Component } from 'react';
-export default function Card({ navigation, titulo, imagemPequena, imagem, descricao }) {
-    if (imagemPequena === undefined) {
-        return (
-            <>
-                <View style={style.card}>
-                    <View style={style.row}>
-                        <Text style={style.titulo}>
-                            {titulo}
-                        </Text>
-                    </View>
-                    <Text style={style.descricao}>{descricao}</Text>
-                    <View>
-                        <Image style={style.imagem} source={imagem}></Image>
-                    </View>
-                    <Button title='asdasd' onPress={() => navigation.navigate("Sinopse")}></Button>
-                </View>
-            </>
-        );
-    }
+export default function Card({ navigation, titulo, imagemPequena, imagem, descricao, pagina }) {
     return (
         <>
             <View style={style.card}>
@@ -31,7 +13,13 @@ export default function Card({ navigation, titulo, imagemPequena, imagem, descri
                 </View>
                 <Text style={style.descricao}>{descricao}</Text>
                 <View>
-                    <Image style={style.imagem} source={imagem}></Image>
+                    <Image style={[style.imagem, {backgroundColor: 'black'}]} source={imagem}></Image>
+                </View>
+                <View style={style.button}>
+                    <Button 
+                      title='Ver'
+                      onPress={() => navigation.navigate(pagina)}
+                      color='#00c16c'/>
                 </View>
             </View>
         </>

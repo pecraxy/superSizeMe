@@ -9,15 +9,14 @@ export default function Gorduras({ navigation }) {
             <Text style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>Super</Text><Text style={styles.sizeMe}>SIZE ME</Text>
           </View>
           <View style={styles.navbar}>
-
           </View>
           <View style={styles.main}>
             <View style={styles.topContent}>
               <Text style={styles.titleText}>
-                Título do Tópico
+                Gordura
               </Text>
               <Text style={styles.subtitleText}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                O que são as gorduras do nosso corpo?
               </Text>
             </View>
             <View style={styles.cardImage}>
@@ -26,33 +25,25 @@ export default function Gorduras({ navigation }) {
             </View>
             <View style={styles.cardText}>
               <Text style={styles.textCardStyle}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
+                Gordura é uma parte essencial da nossa dieta e desempenha várias funções vitais no corpo humano. No entanto, nem todas as gorduras são iguais, e entender as diferenças entre elas é fundamental para uma alimentação saudável.
               </Text>
-              <Text style={styles.textCardStyle}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
-              </Text>
-              <Text style={styles.textCardStyle}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
-              </Text>
-              <Text style={styles.textCardStyle}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
-              </Text>
+              <Text style={styles.textCardStyle}>As gorduras são compostas por moléculas chamadas triglicerídeos, que consistem em três ácidos graxos ligados a uma molécula de glicerol. Esses triglicerídeos são encontrados em alimentos como óleos vegetais, gorduras animais e produtos processados. Quando consumidos, os triglicerídeos fornecem uma fonte concentrada de energia para o corpo.</Text>
+
+                <Text style={styles.textCardStyle}>
+                  Os triglicerídeos desempenham um papel crucial no armazenamento de energia. Quando você consome mais calorias do que queima, o excesso é convertido em triglicerídeos e armazenado nas células adiposas para uso posterior. Durante períodos de jejum ou atividade física, essas reservas de triglicerídeos são mobilizadas para fornecer energia ao corpo.
+                </Text>
+
+                <Text style={styles.textCardStyle}>
+                  No entanto, níveis elevados de triglicerídeos no sangue podem ser prejudiciais à saúde. O consumo excessivo de gorduras saturadas e trans, juntamente com uma dieta rica em carboidratos refinados e açúcares, pode aumentar os níveis de triglicerídeos no sangue, aumentando o risco de doenças cardíacas, acidente vascular cerebral e outras condições médicas.
+                </Text>
+
+                <Text style={styles.textCardStyle}>
+                  Além disso, os triglicerídeos são um importante marcador de saúde cardiovascular. Níveis elevados de triglicerídeos no sangue estão frequentemente associados a outros fatores de risco, como obesidade, resistência à insulina e níveis elevados de colesterol LDL (colesterol ruim).
+                </Text>
+
+                <Text style={styles.textCardStyle}>
+                  Uma abordagem equilibrada para a dieta é essencial para manter os níveis de triglicerídeos dentro de uma faixa saudável. Isso inclui limitar o consumo de gorduras saturadas e trans, optando por gorduras insaturadas saudáveis, como aquelas encontradas em peixes gordurosos, abacates, nozes e óleos vegetais. Além disso, é importante manter um estilo de vida ativo, praticar exercícios regularmente e manter um peso saudável para ajudar a controlar os níveis de triglicerídeos e promover a saúde cardiovascular.
+                </Text>
             </View>
           </View>
         </View>
@@ -85,7 +76,7 @@ const styles = StyleSheet.create({
   main: {
     backgroundColor: '#F8F8F8',
     marginTop: '-13vh',
-    height: '100vh',
+    
     borderTopLeftRadius: '25px',
     borderTopRightRadius: '25px',
     zIndex: '999',
@@ -119,7 +110,7 @@ const styles = StyleSheet.create({
   /* Card com Imagem */
   cardImage: {
     width: '70vw',
-    height: '22vh',
+    height: '30vh',
     padding: '10px',
     borderRadius: '15px',
     backgroundColor: '#fff',
@@ -138,6 +129,6 @@ const styles = StyleSheet.create({
 
   textCardStyle: {
     fontSize: '1.3em',
-    textAlign: 'justify',
+    marginBottom: '0.5em',
   }
 })
